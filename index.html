@@ -1,0 +1,3881 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Blog &#8211; My WordPress Blog</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="My Blog &raquo; Feed"
+      href="https://arif.freelancerarif.com/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="My Blog &raquo; Comments Feed"
+      href="https://arif.freelancerarif.com/comments/feed/"
+    />
+    <script>
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/arif.freelancerarif.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\ud83d\udd25",
+                "\ud83d\udc26\u200b\ud83d\udd25"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <link
+      rel="stylesheet"
+      id="hfe-widgets-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.3.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="jkit-elements-main-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.6.13"
+      media="all"
+    />
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--font-family--inter: "Inter", sans-serif;
+        --wp--preset--font-family--cardo: Cardo;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :root {
+        --wp--style--global--content-size: 800px;
+        --wp--style--global--wide-size: 1200px;
+      }
+      :where(body) {
+        margin: 0;
+      }
+      .wp-site-blocks > .alignleft {
+        float: left;
+        margin-right: 2em;
+      }
+      .wp-site-blocks > .alignright {
+        float: right;
+        margin-left: 2em;
+      }
+      .wp-site-blocks > .aligncenter {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      :where(.wp-site-blocks) > * {
+        margin-block-start: 24px;
+        margin-block-end: 0;
+      }
+      :where(.wp-site-blocks) > :first-child {
+        margin-block-start: 0;
+      }
+      :where(.wp-site-blocks) > :last-child {
+        margin-block-end: 0;
+      }
+      :root {
+        --wp--style--block-gap: 24px;
+      }
+      :root :where(.is-layout-flow) > :first-child {
+        margin-block-start: 0;
+      }
+      :root :where(.is-layout-flow) > :last-child {
+        margin-block-end: 0;
+      }
+      :root :where(.is-layout-flow) > * {
+        margin-block-start: 24px;
+        margin-block-end: 0;
+      }
+      :root :where(.is-layout-constrained) > :first-child {
+        margin-block-start: 0;
+      }
+      :root :where(.is-layout-constrained) > :last-child {
+        margin-block-end: 0;
+      }
+      :root :where(.is-layout-constrained) > * {
+        margin-block-start: 24px;
+        margin-block-end: 0;
+      }
+      :root :where(.is-layout-flex) {
+        gap: 24px;
+      }
+      :root :where(.is-layout-grid) {
+        gap: 24px;
+      }
+      .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      body {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      a:where(:not(.wp-element-button)) {
+        text-decoration: underline;
+      }
+      :root :where(.wp-element-button, .wp-block-button__link) {
+        background-color: #32373c;
+        border-width: 0;
+        color: #fff;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        text-decoration: none;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .has-inter-font-family {
+        font-family: var(--wp--preset--font-family--inter) !important;
+      }
+      .has-cardo-font-family {
+        font-family: var(--wp--preset--font-family--cardo) !important;
+      }
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="woocommerce-layout-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=9.8.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-smallscreen-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=9.8.5"
+      media="only screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      id="woocommerce-general-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=9.8.5"
+      media="all"
+    />
+    <style id="woocommerce-inline-inline-css">
+      .woocommerce form .form-row .required {
+        visibility: visible;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="hfe-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.3.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-199-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/css/post-199.css?ver=1748705884"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-pro-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.19.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mdp-selection-sticky-effect-styles-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/sticky-effect.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="widget-image-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="e-animation-fadeInDown-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="widget-heading-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="e-animation-grow-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="e-animation-zoomIn-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-icons-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.40.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="e-animation-fadeInRight-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="widget-divider-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="e-animation-fadeInUp-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="widget-icon-list-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-209-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/css/post-209.css?ver=1748705884"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mdp-selection-elementor-admin-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/elementor-admin.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mdp-buttoner-elementor-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/buttoner-elementor.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="animations-list-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/hover.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mdp-widgeter-elementor-admin-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/elementor-admin.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mdp-widgeter-elementor-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/css/widgeter-elementor.min.css?ver=1.15"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="font-awesome-5-all-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="font-awesome-4-shim-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.29.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="qi-addons-for-elementor-grid-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/css/grid.min.css?ver=1.9.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="qi-addons-for-elementor-helper-parts-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/css/helper-parts.min.css?ver=1.9.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="qi-addons-for-elementor-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/css/main.min.css?ver=1.9.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="brands-styles-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.8.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="cute-alert-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=3.9.9"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="text-editor-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/metform/public/assets/css/text-editor.css?ver=3.9.9"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-css"
+      href="https://arif.freelancerarif.com/wp-content/themes/hello-elementor/style.min.css?ver=3.3.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-theme-style-css"
+      href="https://arif.freelancerarif.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.3.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-header-footer-css"
+      href="https://arif.freelancerarif.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.3.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="swiper-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/plugins/swiper/8.4.5/swiper.min.css?ver=8.4.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-elementor-icons-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-icons-list-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-social-icons-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-social-share-icons-brands-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-social-share-icons-fontawesome-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-nav-menu-icons-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-widget-blockquote-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-mega-menu-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hfe-nav-menu-widget-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ekit-widget-styles-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.5.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ekit-responsive-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.5.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-redrose-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/redrose.css?ver=1748666015"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-kumbhsans-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/kumbhsans.css?ver=1748666016"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-satisfy-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/satisfy.css?ver=1748666016"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-leckerlione-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/leckerlione.css?ver=1748666016"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-windsong-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/windsong.css?ver=1748666016"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-gf-local-seymourone-css"
+      href="https://arif.freelancerarif.com/wp-content/uploads/elementor/google-fonts/css/seymourone.css?ver=1748666016"
+      media="all"
+    />
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      id="jquery-migrate-js"
+    ></script>
+    <script id="jquery-js-after">
+      !(function ($) {
+        "use strict";
+        $(document).ready(function () {
+          $(this).scrollTop() > 100 &&
+            $(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),
+            $(window).scroll(function () {
+              $(this).scrollTop() < 100
+                ? $(".hfe-scroll-to-top-wrap").fadeOut(300)
+                : $(".hfe-scroll-to-top-wrap").fadeIn(300);
+            }),
+            $(".hfe-scroll-to-top-wrap").on("click", function () {
+              $("html, body").animate({ scrollTop: 0 }, 300);
+              return !1;
+            });
+        });
+      })(jQuery);
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.8.5"
+      id="jquery-blockui-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
+    <script id="wc-add-to-cart-js-extra">
+      var wc_add_to_cart_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+        i18n_view_cart: "View cart",
+        cart_url: "https:\/\/arif.freelancerarif.com\/3-png\/",
+        is_cart: "",
+        cart_redirect_after_add: "no",
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.8.5"
+      id="wc-add-to-cart-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.8.5"
+      id="js-cookie-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
+    <script id="woocommerce-js-extra">
+      var woocommerce_params = {
+        ajax_url: "\/wp-admin\/admin-ajax.php",
+        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+        i18n_password_show: "Show password",
+        i18n_password_hide: "Hide password",
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.8.5"
+      id="woocommerce-js"
+      defer
+      data-wp-strategy="defer"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.29.1"
+      id="font-awesome-4-shim-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://arif.freelancerarif.com/wp-json/"
+    />
+    <link
+      rel="alternate"
+      title="JSON"
+      type="application/json"
+      href="https://arif.freelancerarif.com/wp-json/wp/v2/pages/209"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://arif.freelancerarif.com/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.8.1" />
+    <meta name="generator" content="WooCommerce 9.8.5" />
+    <link rel="canonical" href="https://arif.freelancerarif.com/" />
+    <link rel="shortlink" href="https://arif.freelancerarif.com/" />
+    <link
+      rel="alternate"
+      title="oEmbed (JSON)"
+      type="application/json+oembed"
+      href="https://arif.freelancerarif.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farif.freelancerarif.com%2F"
+    />
+    <link
+      rel="alternate"
+      title="oEmbed (XML)"
+      type="text/xml+oembed"
+      href="https://arif.freelancerarif.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farif.freelancerarif.com%2F&#038;format=xml"
+    />
+    <noscript
+      ><style>
+        .woocommerce-product-gallery {
+          opacity: 1 !important;
+        }
+      </style></noscript
+    >
+    <meta
+      name="generator"
+      content="Elementor 3.29.1; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    />
+    <style>
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload)
+        * {
+        background-image: none !important;
+      }
+      @media screen and (max-height: 1024px) {
+        .e-con.e-parent:nth-of-type(n
+            + 3):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n
+            + 3):not(.e-lazyloaded):not(.e-no-lazyload)
+          * {
+          background-image: none !important;
+        }
+      }
+      @media screen and (max-height: 640px) {
+        .e-con.e-parent:nth-of-type(n
+            + 2):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n
+            + 2):not(.e-lazyloaded):not(.e-no-lazyload)
+          * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <style class="wp-fonts-local">
+      @font-face {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300 900;
+        font-display: fallback;
+        src: url("https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2")
+          format("woff2");
+        font-stretch: normal;
+      }
+      @font-face {
+        font-family: Cardo;
+        font-style: normal;
+        font-weight: 400;
+        font-display: fallback;
+        src: url("https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2")
+          format("woff2");
+      }
+    </style>
+    <link
+      rel="icon"
+      href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/mm-.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/mm-.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/mm-.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://arif.freelancerarif.com/wp-content/uploads/2025/05/mm-.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+  </head>
+  <body
+    class="home wp-singular page-template page-template-elementor_canvas page page-id-209 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js ehf-template-hello-elementor ehf-stylesheet-hello-elementor qodef-qi--no-touch qi-addons-for-elementor-1.9.0 jkit-color-scheme theme-default elementor-default elementor-template-canvas elementor-kit-199 elementor-page elementor-page-209"
+  >
+    <div
+      data-elementor-type="wp-page"
+      data-elementor-id="209"
+      class="elementor elementor-209"
+      data-elementor-post-type="page"
+    >
+      <div
+        class="elementor-element elementor-element-37a6cd5b jkit-sticky-element--enabled e-flex e-con-boxed jkit-sticky-element-on--down jkit-sticky-position--sticky e-con e-parent"
+        data-id="37a6cd5b"
+        data-element_type="container"
+        data-settings='{"background_background":"gradient","jkit_sticky_device":["desktop","tablet"],"jkit_sticky_top_position":{"unit":"px","size":0,"sizes":[]}}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-7fa3d94b e-con-full e-flex e-con e-child"
+            data-id="7fa3d94b"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-63e7da9c e-con-full e-flex e-con e-child"
+              data-id="63e7da9c"
+              data-element_type="container"
+            >
+              <div
+                class="elementor-element elementor-element-6e2483dd elementor-widget elementor-widget-image"
+                data-id="6e2483dd"
+                data-element_type="widget"
+                data-widget_type="image.default"
+              >
+                <div class="elementor-widget-container">
+                  <img
+                    decoding="async"
+                    width="100"
+                    height="40"
+                    src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/Your-Logo-100-40-.png"
+                    class="attachment-large size-large wp-image-466"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-1a923e22 e-con-full e-flex e-con e-child"
+              data-id="1a923e22"
+              data-element_type="container"
+            >
+              <div
+                class="elementor-element elementor-element-50c07d69 hfe-nav-menu__align-right hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-navigation-menu"
+                data-id="50c07d69"
+                data-element_type="widget"
+                data-settings='{"padding_horizontal_menu_item":{"unit":"px","size":36,"sizes":[]},"padding_vertical_menu_item":{"unit":"px","size":18,"sizes":[]},"dropdown_border_radius":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true},"padding_horizontal_dropdown_item":{"unit":"px","size":22,"sizes":[]},"padding":{"unit":"px","top":"20","right":"40","bottom":"20","left":"40","isLinked":false},"padding_horizontal_menu_item_tablet":{"unit":"px","size":"","sizes":[]},"padding_horizontal_menu_item_mobile":{"unit":"px","size":"","sizes":[]},"padding_vertical_menu_item_tablet":{"unit":"px","size":"","sizes":[]},"padding_vertical_menu_item_mobile":{"unit":"px","size":"","sizes":[]},"menu_space_between":{"unit":"px","size":"","sizes":[]},"menu_space_between_tablet":{"unit":"px","size":"","sizes":[]},"menu_space_between_mobile":{"unit":"px","size":"","sizes":[]},"menu_row_space":{"unit":"px","size":"","sizes":[]},"menu_row_space_tablet":{"unit":"px","size":"","sizes":[]},"menu_row_space_mobile":{"unit":"px","size":"","sizes":[]},"dropdown_border_radius_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"dropdown_border_radius_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"width_dropdown_item":{"unit":"px","size":"220","sizes":[]},"width_dropdown_item_tablet":{"unit":"px","size":"","sizes":[]},"width_dropdown_item_mobile":{"unit":"px","size":"","sizes":[]},"padding_horizontal_dropdown_item_tablet":{"unit":"px","size":"","sizes":[]},"padding_horizontal_dropdown_item_mobile":{"unit":"px","size":"","sizes":[]},"padding_vertical_dropdown_item":{"unit":"px","size":15,"sizes":[]},"padding_vertical_dropdown_item_tablet":{"unit":"px","size":"","sizes":[]},"padding_vertical_dropdown_item_mobile":{"unit":"px","size":"","sizes":[]},"distance_from_menu":{"unit":"px","size":"","sizes":[]},"distance_from_menu_tablet":{"unit":"px","size":"","sizes":[]},"distance_from_menu_mobile":{"unit":"px","size":"","sizes":[]},"toggle_size":{"unit":"px","size":"","sizes":[]},"toggle_size_tablet":{"unit":"px","size":"","sizes":[]},"toggle_size_mobile":{"unit":"px","size":"","sizes":[]},"toggle_border_width":{"unit":"px","size":"","sizes":[]},"toggle_border_width_tablet":{"unit":"px","size":"","sizes":[]},"toggle_border_width_mobile":{"unit":"px","size":"","sizes":[]},"toggle_border_radius":{"unit":"px","size":"","sizes":[]},"toggle_border_radius_tablet":{"unit":"px","size":"","sizes":[]},"toggle_border_radius_mobile":{"unit":"px","size":"","sizes":[]},"padding_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"padding_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true}}'
+                data-widget_type="navigation-menu.default"
+              >
+                <div class="elementor-widget-container">
+                  <div
+                    class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__text hfe-animation__grow"
+                    data-layout="horizontal"
+                    data-last-item="cta"
+                  >
+                    <div
+                      role="button"
+                      class="hfe-nav-menu__toggle elementor-clickable"
+                    >
+                      <span class="screen-reader-text">Menu</span>
+                      <div class="hfe-nav-menu-icon">
+                        <svg
+                          aria-hidden="true"
+                          class="e-font-icon-svg e-fas-align-justify"
+                          viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <nav
+                      class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow"
+                      data-toggle-icon='&lt;svg aria-hidden="true" tabindex="0" class="e-font-icon-svg e-fas-align-justify" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"&gt;&lt;/path&gt;&lt;/svg&gt;'
+                      data-close-icon='&lt;svg aria-hidden="true" tabindex="0" class="e-font-icon-svg e-far-window-close" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z"&gt;&lt;/path&gt;&lt;/svg&gt;'
+                      data-full-width="yes"
+                    >
+                      <ul id="menu-1-50c07d69" class="hfe-nav-menu">
+                        <li
+                          id="menu-item-380"
+                          class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/"
+                            class="hfe-menu-item"
+                            >Home</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-394"
+                          class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/about-us/"
+                            class="hfe-menu-item"
+                            >About Us</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-384"
+                          class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/menu/"
+                            class="hfe-menu-item"
+                            >Menu</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-387"
+                          class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/shop/"
+                            class="hfe-menu-item"
+                            >Shop</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-383"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent hfe-has-submenu hfe-creative-menu"
+                        >
+                          <div class="hfe-has-submenu-container">
+                            <a
+                              href="https://arif.freelancerarif.com/healthy-food/"
+                              class="hfe-menu-item"
+                              >Healthy Food<span
+                                class="hfe-menu-toggle sub-arrow hfe-menu-child-0"
+                                ><i class="fa"></i></span
+                            ></a>
+                          </div>
+                          <ul class="sub-menu">
+                            <li
+                              id="menu-item-382"
+                              class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu"
+                            >
+                              <a
+                                href="https://arif.freelancerarif.com/fast-food/"
+                                class="hfe-sub-menu-item"
+                                >Fast Food</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          id="menu-item-385"
+                          class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/restaurant/"
+                            class="hfe-menu-item"
+                            >Restaurant</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-381"
+                          class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"
+                        >
+                          <a
+                            href="https://arif.freelancerarif.com/contact/"
+                            class="hfe-menu-item"
+                            >Contact</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-50510a98 e-flex e-con-boxed e-con e-parent"
+        data-id="50510a98"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-13715a31 e-flex e-con-boxed e-con e-child"
+            data-id="13715a31"
+            data-element_type="container"
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-1c1d3fee e-con-full e-flex e-con e-child"
+                data-id="1c1d3fee"
+                data-element_type="container"
+              >
+                <div
+                  class="elementor-element elementor-element-70a46ba8 elementor-invisible elementor-widget elementor-widget-heading"
+                  data-id="70a46ba8"
+                  data-element_type="widget"
+                  data-settings='{"_animation":"fadeInDown"}'
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h1 class="elementor-heading-title elementor-size-default">
+                      Premium Coffee Experience
+                    </h1>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-612652bd elementor-widget elementor-widget-heading"
+                  data-id="612652bd"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h1 class="elementor-heading-title elementor-size-default">
+                      Something for Everyone: Discover Our Coffee Selection
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-39aa5e3b e-flex e-con-boxed e-con e-child"
+                data-id="39aa5e3b"
+                data-element_type="container"
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-5379c29d elementor-animation-grow elementor-invisible elementor-widget elementor-widget-mdp-buttoner-elementor"
+                    data-id="5379c29d"
+                    data-element_type="widget"
+                    data-settings='{"_animation":"zoomIn"}'
+                    data-widget_type="mdp-buttoner-elementor.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <style>
+                        .mdp-buttoner-container-5379c29d .mdp-buttoner-link {
+                          cursor: pointer;
+                        }
+                      </style>
+                      <!-- Start Buttoner for Elementor WordPress Plugin -->
+                      <div
+                        class="mdp-buttoner-container mdp-buttoner-container-5379c29d"
+                      >
+                        <a
+                          id=""
+                          href="#"
+                          class="mdp-buttoner-link elementor-animation-grow"
+                          target='"_blank"'
+                          rel='"nofollow"'
+                        >
+                          <span>
+                            <span class="mdp-buttoner-text"
+                              >Explore our menu</span
+                            >
+                          </span>
+                        </a>
+                      </div>
+                      <!-- End Buttoner for Elementor WordPress Plugin -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-605f5631 elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider"
+            data-id="605f5631"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInRight"}'
+            data-widget_type="divider.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-divider">
+                <span class="elementor-divider-separator"> </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-7ef954a6 e-flex e-con-boxed e-con e-child"
+            data-id="7ef954a6"
+            data-element_type="container"
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-28c39cc e-con-full e-flex e-con e-child"
+                data-id="28c39cc"
+                data-element_type="container"
+              >
+                <div
+                  class="elementor-element elementor-element-28aa3cc7 e-flex e-con-boxed e-con e-child"
+                  data-id="28aa3cc7"
+                  data-element_type="container"
+                >
+                  <div class="e-con-inner">
+                    <div
+                      class="elementor-element elementor-element-6ba05b6d e-flex e-con-boxed e-con e-child"
+                      data-id="6ba05b6d"
+                      data-element_type="container"
+                    >
+                      <div class="e-con-inner">
+                        <div
+                          class="elementor-element elementor-element-21ef3a3a elementor-widget__width-initial elementor-widget elementor-widget-qi_addons_for_elementor_counter"
+                          data-id="21ef3a3a"
+                          data-element_type="widget"
+                          data-widget_type="qi_addons_for_elementor_counter.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <div
+                              class="qodef-shortcode qodef-m qodef-qi-counter qodef-layout--simple"
+                              data-end-digit="100"
+                              data-step-digit="8"
+                            >
+                              <div class="qodef-m-digit-wrapper">
+                                <div class="qodef-m-digit"></div>
+                              </div>
+                              <div class="qodef-m-content"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-5f506a93 elementor-widget elementor-widget-heading"
+                          data-id="5f506a93"
+                          data-element_type="widget"
+                          data-widget_type="heading.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <h2
+                              class="elementor-heading-title elementor-size-default"
+                            >
+                              +
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-684565c4 elementor-widget elementor-widget-text-editor"
+                      data-id="684565c4"
+                      data-element_type="widget"
+                      data-widget_type="text-editor.default"
+                    >
+                      <div class="elementor-widget-container">
+                        Coffee varieties
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-6f00e00a e-flex e-con-boxed e-con e-child"
+                  data-id="6f00e00a"
+                  data-element_type="container"
+                >
+                  <div class="e-con-inner">
+                    <div
+                      class="elementor-element elementor-element-6e213c6a e-flex e-con-boxed e-con e-child"
+                      data-id="6e213c6a"
+                      data-element_type="container"
+                    >
+                      <div class="e-con-inner">
+                        <div
+                          class="elementor-element elementor-element-2022a4d0 elementor-widget__width-initial elementor-widget elementor-widget-qi_addons_for_elementor_counter"
+                          data-id="2022a4d0"
+                          data-element_type="widget"
+                          data-widget_type="qi_addons_for_elementor_counter.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <div
+                              class="qodef-shortcode qodef-m qodef-qi-counter qodef-layout--simple"
+                              data-end-digit="2.5"
+                              data-step-digit="0.5"
+                            >
+                              <div class="qodef-m-digit-wrapper">
+                                <div class="qodef-m-digit"></div>
+                              </div>
+                              <div class="qodef-m-content"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-69ade5c5 elementor-widget elementor-widget-heading"
+                          data-id="69ade5c5"
+                          data-element_type="widget"
+                          data-widget_type="heading.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <h2
+                              class="elementor-heading-title elementor-size-default"
+                            >
+                              K+
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-2ae41e43 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+                      data-id="2ae41e43"
+                      data-element_type="widget"
+                      data-widget_type="text-editor.default"
+                    >
+                      <div class="elementor-widget-container">
+                        Happy Clients
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-4f5e74cb e-flex e-con-boxed e-con e-child"
+                  data-id="4f5e74cb"
+                  data-element_type="container"
+                >
+                  <div class="e-con-inner">
+                    <div
+                      class="elementor-element elementor-element-2b3f5018 e-flex e-con-boxed e-con e-child"
+                      data-id="2b3f5018"
+                      data-element_type="container"
+                    >
+                      <div class="e-con-inner">
+                        <div
+                          class="elementor-element elementor-element-37c2757c elementor-widget__width-initial elementor-widget elementor-widget-qi_addons_for_elementor_counter"
+                          data-id="37c2757c"
+                          data-element_type="widget"
+                          data-widget_type="qi_addons_for_elementor_counter.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <div
+                              class="qodef-shortcode qodef-m qodef-qi-counter qodef-layout--simple"
+                              data-end-digit="20"
+                              data-step-digit="1"
+                            >
+                              <div class="qodef-m-digit-wrapper">
+                                <div class="qodef-m-digit"></div>
+                              </div>
+                              <div class="qodef-m-content"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-643640 elementor-widget elementor-widget-heading"
+                          data-id="643640"
+                          data-element_type="widget"
+                          data-widget_type="heading.default"
+                        >
+                          <div class="elementor-widget-container">
+                            <h2
+                              class="elementor-heading-title elementor-size-default"
+                            >
+                              +
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-5ed7c546 elementor-widget elementor-widget-text-editor"
+                      data-id="5ed7c546"
+                      data-element_type="widget"
+                      data-widget_type="text-editor.default"
+                    >
+                      <div class="elementor-widget-container">
+                        Years experience
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-73a42fa9 e-flex e-con-boxed e-con e-child"
+                data-id="73a42fa9"
+                data-element_type="container"
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-663abb96 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget-tablet__width-inherit elementor-widget elementor-widget-text-editor"
+                    data-id="663abb96"
+                    data-element_type="widget"
+                    data-widget_type="text-editor.default"
+                  >
+                    <div class="elementor-widget-container">
+                      With our commitment to quality and sustainability, you can
+                      enjoy our seafood with confidence, knowing that you are
+                      nourishing your body and the planet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-73ca4a32 e-flex e-con-boxed e-con e-parent"
+        data-id="73ca4a32"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-120a8d65 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="120a8d65"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef--alignment-center qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Elevating</span>
+                  <span class="qodef-e-word">Coffee</span>
+                  <span class="qodef-e-word">to</span>
+                  <span class="qodef-e-word">a</span>
+                  <span class="qodef-e-word">Higher</span>
+                  <span class="qodef-e-word">Standard</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-4fc2c48c elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="4fc2c48c"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Where Coffee Meets Dessert Delights
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-6c0058ba e-grid e-con-boxed e-con e-child"
+            data-id="6c0058ba"
+            data-element_type="container"
+            data-settings='{"background_background":"classic"}'
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-67ad7eed elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="67ad7eed"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn"}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              fetchpriority="high"
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925714.png"
+                              class="attachment-full size-full wp-image-418"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925714.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925714-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925714-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925714-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            Crafted with Passion
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Each cup tells a story of dedication and love,
+                            brewed to perfection for your enjoyment
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            Crafted with Passion
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Each cup tells a story of dedication and love,
+                            brewed to perfection for your enjoyment
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Shop Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-4211b14 elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="4211b14"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn","_animation_delay":100}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_Protafilter.png"
+                              class="attachment-full size-full wp-image-419"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_Protafilter.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_Protafilter-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_Protafilter-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_Protafilter-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            Coffee Selections
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Vestibulum lectus mauris ultrices eros in cursus
+                            turpis massa. Velit laoreet id donec
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            Coffee Selections
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Vestibulum lectus mauris ultrices eros in cursus
+                            turpis massa. Velit laoreet id donec
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Click Here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-41e78088 elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="41e78088"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn","_animation_delay":200}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925705.png"
+                              class="attachment-full size-full wp-image-420"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925705.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925705-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925705-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925705-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            State-of-the-Art Machine
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Indulge in our café's perfect brews, courtesy of our
+                            state-of-the-art coffee machine
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            State-of-the-Art Machine
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Indulge in our café's perfect brews, courtesy of our
+                            state-of-the-art coffee machine
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Click Here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-621b273c elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="621b273c"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn","_animation_delay":100}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_beans.png"
+                              class="attachment-full size-full wp-image-421"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_beans.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_beans-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_beans-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_beans-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            Quality Ingredients
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Awaken your senses with our rich, aromatic coffee
+                            blends, crafted to perfection
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            Quality Ingredients
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Awaken your senses with our rich, aromatic coffee
+                            blends, crafted to perfection
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Click Here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-4f7d5102 elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="4f7d5102"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn","_animation_delay":200}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925704.png"
+                              class="attachment-full size-full wp-image-422"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925704.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925704-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925704-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/6925704-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            Wake Up to Excellence
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Start your day right with our rich, aromatic blends
+                            that awaken your senses
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            This is the heading
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Start your day right with our rich, aromatic blends
+                            that awaken your senses
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Click Here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-59f42bde elementor-flip-box--effect-fade elementor-invisible elementor-widget elementor-widget-flip-box"
+                data-id="59f42bde"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn","_animation_delay":300}'
+                data-widget_type="flip-box.default"
+              >
+                <div class="elementor-widget-container">
+                  <div class="elementor-flip-box" tabindex="0">
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__front"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <div class="elementor-flip-box__image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="500"
+                              height="500"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_cupcake.png"
+                              class="attachment-full size-full wp-image-423"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_cupcake.png         500w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_cupcake-300x300.png 300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_cupcake-150x150.png 150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/Coffee_cupcake-100x100.png 100w
+                              "
+                              sizes="(max-width: 500px) 100vw, 500px"
+                            />
+                          </div>
+
+                          <h3 class="elementor-flip-box__layer__title">
+                            Exceptional Service
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Our dedicated staff ensures a seamless dining
+                            experience from start to finish
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-flip-box__layer elementor-flip-box__back"
+                    >
+                      <div class="elementor-flip-box__layer__overlay">
+                        <div class="elementor-flip-box__layer__inner">
+                          <h3 class="elementor-flip-box__layer__title">
+                            This is the heading
+                          </h3>
+
+                          <div class="elementor-flip-box__layer__description">
+                            Lorem ipsum dolor sit amet consectetur adipiscing
+                            elit dolor
+                          </div>
+
+                          <a
+                            class="elementor-flip-box__button elementor-button elementor-size-sm"
+                          >
+                            Click Here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-66cc8b73 e-flex e-con-boxed e-con e-parent"
+        data-id="66cc8b73"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-5d26829f elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="5d26829f"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Your</span>
+                  <span class="qodef-e-word">Daily</span>
+                  <span class="qodef-e-word">Dose</span>
+                  <span class="qodef-e-word">of</span>
+                  <span class="qodef-e-word">Caffeine</span>
+                  <span class="qodef-e-word">and</span>
+                  <span class="qodef-e-word">Comfort</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-3d42441b elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="3d42441b"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Where Coffee Meets Dessert Delights
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-679d639e elementor-widget elementor-widget-qi_addons_for_elementor_image_gallery_masonry"
+            data-id="679d639e"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_image_gallery_masonry.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-image-gallery-masonry qodef-qi-fslightbox-popup qodef-popup-gallery qodef-image--hover-zoom qodef-qi-grid qodef-layout--qi-masonry qodef-items--fixed qodef-col-num--3 qodef-responsive--predefined"
+              >
+                <div class="qodef-grid-inner">
+                  <div class="qodef-qi-grid-masonry-sizer"></div>
+                  <div
+                    class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--landscape"
+                  >
+                    <div class="qodef-e-inner">
+                      <a
+                        class="qodef-popup-item"
+                        itemprop="image"
+                        href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/young-attractive-couple-on-date-in-coffee-shop-2023-11-27-05-26-38-utc.jpg"
+                        data-type="image"
+                        data-fslightbox="gallery-1"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="1300"
+                          height="650"
+                          src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/young-attractive-couple-on-date-in-coffee-shop-2023-11-27-05-26-38-utc-1300x650.jpg"
+                          class="attachment-qi_addons_for_elementor_image_size_landscape size-qi_addons_for_elementor_image_size_landscape"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--square"
+                  >
+                    <div class="qodef-e-inner">
+                      <a
+                        class="qodef-popup-item"
+                        itemprop="image"
+                        href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee.jpg"
+                        data-type="image"
+                        data-fslightbox="gallery-1"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="650"
+                          height="650"
+                          src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-650x650.jpg"
+                          class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                          alt=""
+                          srcset="
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-650x650.jpg    650w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-150x150.jpg    150w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-1300x1300.jpg 1300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-300x300.jpg    300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/person-serving-cup-coffee-100x100.jpg    100w
+                          "
+                          sizes="(max-width: 650px) 100vw, 650px"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--square"
+                  >
+                    <div class="qodef-e-inner">
+                      <a
+                        class="qodef-popup-item"
+                        itemprop="image"
+                        href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
+                        data-type="image"
+                        data-fslightbox="gallery-1"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="650"
+                          height="650"
+                          src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-650x650.jpg"
+                          class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                          alt=""
+                          srcset="
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-650x650.jpg    650w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-150x150.jpg    150w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-1300x1300.jpg 1300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-300x300.jpg    300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/nathan-dumlao-6VhPY27jdps-unsplash-100x100.jpg    100w
+                          "
+                          sizes="(max-width: 650px) 100vw, 650px"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--square"
+                  >
+                    <div class="qodef-e-inner">
+                      <a
+                        class="qodef-popup-item"
+                        itemprop="image"
+                        href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc.jpg"
+                        data-type="image"
+                        data-fslightbox="gallery-1"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="650"
+                          height="650"
+                          src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-650x650.jpg"
+                          class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                          alt=""
+                          srcset="
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-650x650.jpg    650w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-150x150.jpg    150w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-1300x1300.jpg 1300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-300x300.jpg    300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/transparent-cloche-covering-sweet-food-2024-01-10-23-28-02-utc-100x100.jpg    100w
+                          "
+                          sizes="(max-width: 650px) 100vw, 650px"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--square"
+                  >
+                    <div class="qodef-e-inner">
+                      <a
+                        class="qodef-popup-item"
+                        itemprop="image"
+                        href="https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc.jpg"
+                        data-type="image"
+                        data-fslightbox="gallery-1"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="650"
+                          height="650"
+                          src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-650x650.jpg"
+                          class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                          alt=""
+                          srcset="
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-650x650.jpg    650w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-150x150.jpg    150w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-1300x1300.jpg 1300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-300x300.jpg    300w,
+                            https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-100x100.jpg    100w
+                          "
+                          sizes="(max-width: 650px) 100vw, 650px"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-1ae02713 e-flex e-con-boxed e-con e-parent"
+        data-id="1ae02713"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-951c772 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="951c772"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef--alignment-center qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Fueling</span>
+                  <span class="qodef-e-word">Your</span>
+                  <span class="qodef-e-word">Day,</span>
+                  <span class="qodef-e-word">One</span>
+                  <span class="qodef-e-word">Cup</span>
+                  <span class="qodef-e-word">at</span>
+                  <span class="qodef-e-word">a</span>
+                  <span class="qodef-e-word">Time</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-49b2757c elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="49b2757c"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Coffee, Desserts, and More: Indulge in Our Café Selections
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-3abc32b e-grid e-con-boxed e-con e-child"
+            data-id="3abc32b"
+            data-element_type="container"
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-7d7f312f elementor-widget elementor-widget-price-list"
+                data-id="7d7f312f"
+                data-element_type="widget"
+                data-widget_type="price-list.default"
+              >
+                <div class="elementor-widget-container">
+                  <ul class="elementor-price-list">
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Espresso Elegance
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$2.99</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            A classic shot of rich, bold espresso. Savor the
+                            intense flavor and aroma of carefully selected
+                            beans.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Frothy Delights
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$3.50</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Indulge in a perfectly balanced espresso with creamy
+                            steamed milk and a frothy top.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Milk Masterpieces
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$2.99</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Experience the perfect harmony of smooth espresso
+                            and velvety steamed milk.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Bold Brews
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$2.50</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Aliquet porttitor lacus luctus accumsan. Lorem ipsum
+                            dolor sit amet consectetur adipiscing elit
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-5d556e57 elementor-widget elementor-widget-price-list"
+                data-id="5d556e57"
+                data-element_type="widget"
+                data-widget_type="price-list.default"
+              >
+                <div class="elementor-widget-container">
+                  <ul class="elementor-price-list">
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Decadent Delights
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$4.50</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Scelerisque purus semper eget duis at. Posuere morbi
+                            leo urna molestie at elementum eu facilisis.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Sweet Sensations
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$6.00</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Amet nulla facilisi morbi tempus iaculis urna id
+                            volutpat. Viverra aliquet eget sit amet tellus cras.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Divine Desserts
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$5.00</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Vestibulum lectus mauris ultrices eros in cursus
+                            turpis massa. Velit laoreet id donec ultrices
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="elementor-price-list-item" href="#">
+                        <div class="elementor-price-list-text">
+                          <div class="elementor-price-list-header">
+                            <span class="elementor-price-list-title">
+                              Blissful Bites
+                            </span>
+                            <span class="elementor-price-list-separator"></span>
+                            <span class="elementor-price-list-price"
+                              >$3.49</span
+                            >
+                          </div>
+                          <p class="elementor-price-list-description">
+                            Tristique sollicitudin nibh sit amet commodo.
+                            Vehicula ipsum a arcu cursus vitae congue.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-47dadb61 e-flex e-con-boxed e-con e-parent"
+        data-id="47dadb61"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-6e7dfc6c e-con-full e-flex e-con e-child"
+            data-id="6e7dfc6c"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-1f133e82 e-con-full e-flex e-con e-child"
+              data-id="1f133e82"
+              data-element_type="container"
+              data-settings='{"background_background":"classic"}'
+            >
+              <div
+                class="elementor-element elementor-element-2bc4a8b9 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+                data-id="2bc4a8b9"
+                data-element_type="widget"
+                data-widget_type="heading.default"
+              >
+                <div class="elementor-widget-container">
+                  <h2 class="elementor-heading-title elementor-size-default">
+                    Experience the True Essence of Coffee
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-7e9901f2 elementor-widget elementor-widget-text-editor"
+                data-id="7e9901f2"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident.
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-35e89887 e-grid e-con-boxed e-con e-child"
+                data-id="35e89887"
+                data-element_type="container"
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-5efe1d98 e-flex e-con-boxed e-con e-child"
+                    data-id="5efe1d98"
+                    data-element_type="container"
+                  >
+                    <div class="e-con-inner">
+                      <div
+                        class="elementor-element elementor-element-28ce5d7 elementor-widget elementor-widget-text-editor"
+                        data-id="28ce5d7"
+                        data-element_type="widget"
+                        data-widget_type="text-editor.default"
+                      >
+                        <div class="elementor-widget-container">Address</div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-407e6530 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+                        data-id="407e6530"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h5
+                            class="elementor-heading-title elementor-size-default"
+                          >
+                            123 Main Street, Cityville, State, 012345
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-17017f89 e-flex e-con-boxed e-con e-child"
+                    data-id="17017f89"
+                    data-element_type="container"
+                  >
+                    <div class="e-con-inner">
+                      <div
+                        class="elementor-element elementor-element-1219a3e5 elementor-widget elementor-widget-text-editor"
+                        data-id="1219a3e5"
+                        data-element_type="widget"
+                        data-widget_type="text-editor.default"
+                      >
+                        <div class="elementor-widget-container">Phone</div>
+                      </div>
+                      <div
+                        class="elementor-element elementor-element-5840041a elementor-widget__width-initial elementor-widget elementor-widget-heading"
+                        data-id="5840041a"
+                        data-element_type="widget"
+                        data-widget_type="heading.default"
+                      >
+                        <div class="elementor-widget-container">
+                          <h5
+                            class="elementor-heading-title elementor-size-default"
+                          >
+                            +1 (555) 123-4567
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-4c12127a elementor-animation-grow elementor-invisible elementor-widget elementor-widget-mdp-buttoner-elementor"
+                data-id="4c12127a"
+                data-element_type="widget"
+                data-settings='{"_animation":"zoomIn"}'
+                data-widget_type="mdp-buttoner-elementor.default"
+              >
+                <div class="elementor-widget-container">
+                  <style>
+                    .mdp-buttoner-container-4c12127a .mdp-buttoner-link {
+                      cursor: pointer;
+                    }
+                  </style>
+                  <!-- Start Buttoner for Elementor WordPress Plugin -->
+                  <div
+                    class="mdp-buttoner-container mdp-buttoner-container-4c12127a"
+                  >
+                    <a
+                      id=""
+                      href="#"
+                      class="mdp-buttoner-link elementor-animation-grow"
+                      target='"_blank"'
+                      rel='"nofollow"'
+                    >
+                      <span>
+                        <span class="mdp-buttoner-text">Book a Table</span>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- End Buttoner for Elementor WordPress Plugin -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-47061011 e-flex e-con-boxed e-con e-parent"
+        data-id="47061011"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-7b1397e3 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="7b1397e3"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef--alignment-center qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Crafting</span>
+                  <span class="qodef-e-word">Quality,</span>
+                  <span class="qodef-e-word">Savoring</span>
+                  <span class="qodef-e-word">Moments</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-760de165 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="760de165"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Explore Our Collections
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-132f40fb elementor-widget elementor-widget-qi_addons_for_elementor_product_slider"
+            data-id="132f40fb"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_product_slider.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-addons-woo-shortcode qodef-qi-woo-shortcode-product-slider qodef-item-layout--info-below-swap qodef-image--hover-zoom qodef-qi-grid qodef-qi-swiper-container qodef-item-layout--info-below-swap qodef-pagination--outside qodef-pagination-alignment--center"
+                data-options='{"direction":"horizontal","slidesPerView":"3","spaceBetween":16,"spaceBetweenTablet":30,"spaceBetweenMobile":30,"effect":"","loop":true,"autoplay":true,"centeredSlides":false,"speed":"","speedAnimation":"","outsideNavigation":"no","outsidePagination":"yes","unique":"2","partialValue":0,"disablePartialValue":"","parallax":"no"}'
+              >
+                <div class="swiper-wrapper">
+                  <p class="qodef-m-posts-not-found qodef-grid-item">
+                    No posts were found for provided query parameters.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="swiper-pagination qodef-swiper-pagination-outside swiper-pagination-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-159c1d47 e-flex e-con-boxed e-con e-parent"
+        data-id="159c1d47"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-1523688d elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="1523688d"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Fueling</span>
+                  <span class="qodef-e-word">Your</span>
+                  <span class="qodef-e-word">Day,</span>
+                  <span class="qodef-e-word">One</span>
+                  <span class="qodef-e-word">Cup</span>
+                  <span class="qodef-e-word">at</span>
+                  <span class="qodef-e-word">a</span>
+                  <span class="qodef-e-word">Time</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-4d0e7f69 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="4d0e7f69"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Rave Reviews from Our Guests
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-e1a2a6f elementor-testimonial--layout-image_above elementor-testimonial--align-left elementor-testimonial--skin-default elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel"
+            data-id="e1a2a6f"
+            data-element_type="widget"
+            data-settings='{"slides_per_view":"3","slides_to_scroll":"1","lazyload":"yes","space_between":{"unit":"px","size":40,"sizes":[]},"slides_per_view_tablet":"2","pagination":"bullets","speed":500,"autoplay":"yes","autoplay_speed":5000,"loop":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","space_between_tablet":{"unit":"px","size":10,"sizes":[]},"space_between_mobile":{"unit":"px","size":10,"sizes":[]}}'
+            data-widget_type="testimonial-carousel.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-swiper">
+                <div class="elementor-main-swiper swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="elementor-testimonial">
+                        <div class="elementor-testimonial__content">
+                          <div class="elementor-testimonial__text">
+                            I've never tasted coffee quite like this before!
+                            Each cup is brewed to perfection, with just the
+                            right balance of bold flavor and smoothness.
+                          </div>
+                          <cite class="elementor-testimonial__cite"
+                            ><span class="elementor-testimonial__name"
+                              >Jack Thompson</span
+                            ></cite
+                          >
+                        </div>
+                        <div class="elementor-testimonial__footer">
+                          <div class="elementor-testimonial__image">
+                            <img
+                              class="swiper-lazy"
+                              data-src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/young-bearded-man-sitting-in-cafe-and-smiling-in-c-2023-11-27-05-29-38-utc.jpg"
+                              alt="Jack Thompson"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="elementor-testimonial">
+                        <div class="elementor-testimonial__content">
+                          <div class="elementor-testimonial__text">
+                            The aroma of freshly brewed coffee, the warm
+                            ambiance, and the friendly staff make every  visit a
+                            delightful escape
+                          </div>
+                          <cite class="elementor-testimonial__cite"
+                            ><span class="elementor-testimonial__name"
+                              >Mia Anderson</span
+                            ></cite
+                          >
+                        </div>
+                        <div class="elementor-testimonial__footer">
+                          <div class="elementor-testimonial__image">
+                            <img
+                              class="swiper-lazy"
+                              data-src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/feeding-her-body-what-it-wants-shot-of-a-young-wo-2023-11-27-05-23-02-utc.jpg"
+                              alt="Mia Anderson"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="elementor-testimonial">
+                        <div class="elementor-testimonial__content">
+                          <div class="elementor-testimonial__text">
+                            The ambiance is cozy, the coffee is superb, and the
+                            service is always top-notch
+                          </div>
+                          <cite class="elementor-testimonial__cite"
+                            ><span class="elementor-testimonial__name"
+                              >John Doe</span
+                            ></cite
+                          >
+                        </div>
+                        <div class="elementor-testimonial__footer">
+                          <div class="elementor-testimonial__image">
+                            <img
+                              class="swiper-lazy"
+                              data-src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/the-best-coffee-in-town-2023-11-27-05-12-42-utc.jpg"
+                              alt="John Doe"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-7031aa9d e-flex e-con-boxed e-con e-parent"
+        data-id="7031aa9d"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-4a35c0c5 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text"
+            data-id="4a35c0c5"
+            data-element_type="widget"
+            data-widget_type="qi_addons_for_elementor_animated_text.default"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="qodef-shortcode qodef-m qodef-qi-animated-text qodef--animated-by-word qodef--alignment-center qodef-qi--has-appear qodef--appear-from-right"
+              >
+                <p class="qodef-m-title">
+                  <span class="qodef-e-word">Coffee</span>
+                  <span class="qodef-e-word">Connoisseur's</span>
+                  <span class="qodef-e-word">Corner</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-3322de68 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="3322de68"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Exploring the Art and Science of Coffee Brewing
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-62268422 e-flex e-con-boxed e-con e-child"
+            data-id="62268422"
+            data-element_type="container"
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-533feab9 e-con-full e-flex elementor-invisible e-con e-child"
+                data-id="533feab9"
+                data-element_type="container"
+                data-settings='{"animation":"fadeInUp"}'
+              >
+                <div
+                  class="elementor-element elementor-element-3200e39b elementor-widget elementor-widget-image"
+                  data-id="3200e39b"
+                  data-element_type="widget"
+                  data-widget_type="image.default"
+                >
+                  <div class="elementor-widget-container">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      width="800"
+                      height="533"
+                      src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-1024x682.jpg"
+                      class="attachment-large size-large wp-image-428"
+                      alt=""
+                      srcset="
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-1024x682.jpg  1024w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-300x200.jpg    300w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-768x512.jpg    768w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-1536x1024.jpg 1536w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc-600x400.jpg    600w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cropped-view-of-barista-pouring-sugar-in-cup-of-ca-2023-11-27-05-12-45-utc.jpg           2000w
+                      "
+                      sizes="(max-width: 800px) 100vw, 800px"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-66ac533b elementor-widget elementor-widget-heading"
+                  data-id="66ac533b"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h4 class="elementor-heading-title elementor-size-default">
+                      A Night of Music, Coffee, and Conversation
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-42e06473 elementor-widget elementor-widget-text-editor"
+                  data-id="42e06473"
+                  data-element_type="widget"
+                  data-widget_type="text-editor.default"
+                >
+                  <div class="elementor-widget-container">Today • 6:00 PM</div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-274a07a8 elementor-widget elementor-widget-heading"
+                  data-id="274a07a8"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h6 class="elementor-heading-title elementor-size-default">
+                      $20.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-408116 e-con-full e-flex elementor-invisible e-con e-child"
+                data-id="408116"
+                data-element_type="container"
+                data-settings='{"animation":"fadeInUp","animation_delay":100}'
+              >
+                <div
+                  class="elementor-element elementor-element-7f1e4310 elementor-widget elementor-widget-image"
+                  data-id="7f1e4310"
+                  data-element_type="widget"
+                  data-widget_type="image.default"
+                >
+                  <div class="elementor-widget-container">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      width="800"
+                      height="533"
+                      src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-1024x682.jpg"
+                      class="attachment-large size-large wp-image-433"
+                      alt=""
+                      srcset="
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-1024x682.jpg  1024w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-300x200.jpg    300w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-768x512.jpg    768w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-1536x1024.jpg 1536w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1-600x400.jpg    600w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/coffee-shop-team-tasting-bowls-of-coffee-and-coffe-2023-11-27-04-50-23-utc-1.jpg           2000w
+                      "
+                      sizes="(max-width: 800px) 100vw, 800px"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-232403a2 elementor-widget elementor-widget-heading"
+                  data-id="232403a2"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h4 class="elementor-heading-title elementor-size-default">
+                      Brews &amp; Views: A Coffee Tasting Experience
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-291092b3 elementor-widget elementor-widget-text-editor"
+                  data-id="291092b3"
+                  data-element_type="widget"
+                  data-widget_type="text-editor.default"
+                >
+                  <div class="elementor-widget-container">Today • 6:00 PM</div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-9194693 elementor-widget elementor-widget-heading"
+                  data-id="9194693"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h6 class="elementor-heading-title elementor-size-default">
+                      $20.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-element elementor-element-40f083e7 e-con-full e-flex elementor-invisible e-con e-child"
+                data-id="40f083e7"
+                data-element_type="container"
+                data-settings='{"animation":"fadeInUp","animation_delay":200}'
+              >
+                <div
+                  class="elementor-element elementor-element-38dd0128 elementor-widget elementor-widget-image"
+                  data-id="38dd0128"
+                  data-element_type="widget"
+                  data-widget_type="image.default"
+                >
+                  <div class="elementor-widget-container">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      width="800"
+                      height="534"
+                      src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-1024x683.jpg"
+                      class="attachment-large size-large wp-image-434"
+                      alt=""
+                      srcset="
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-1024x683.jpg  1024w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-300x200.jpg    300w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-768x512.jpg    768w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-1536x1024.jpg 1536w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc-600x400.jpg    600w,
+                        https://arif.freelancerarif.com/wp-content/uploads/2025/05/cheerful-male-worker-holding-scoop-with-coffee-bea-2023-11-27-04-49-20-utc.jpg           1920w
+                      "
+                      sizes="(max-width: 800px) 100vw, 800px"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-24e61312 elementor-widget elementor-widget-heading"
+                  data-id="24e61312"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h4 class="elementor-heading-title elementor-size-default">
+                      Coffee Lab: A Journey of the Senses
+                    </h4>
+                  </div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-65f7518a elementor-widget elementor-widget-text-editor"
+                  data-id="65f7518a"
+                  data-element_type="widget"
+                  data-widget_type="text-editor.default"
+                >
+                  <div class="elementor-widget-container">Today • 6:00 PM</div>
+                </div>
+                <div
+                  class="elementor-element elementor-element-4f28e5a3 elementor-widget elementor-widget-heading"
+                  data-id="4f28e5a3"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                >
+                  <div class="elementor-widget-container">
+                    <h6 class="elementor-heading-title elementor-size-default">
+                      $20.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-3c363424 e-flex e-con-boxed e-con e-parent"
+        data-id="3c363424"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-52ee6d1f e-con-full e-flex e-con e-child"
+            data-id="52ee6d1f"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-1e59812c elementor-widget elementor-widget-theme-site-logo elementor-widget-image"
+              data-id="1e59812c"
+              data-element_type="widget"
+              data-widget_type="theme-site-logo.default"
+            >
+              <div class="elementor-widget-container">
+                <a href="https://arif.freelancerarif.com">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="100"
+                    height="40"
+                    src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/mm-.png"
+                    class="attachment-full size-full wp-image-406"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-38e55bd1 elementor-widget__width-inherit elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+              data-id="38e55bd1"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-2def36a9 e-con-full e-flex e-con e-child"
+            data-id="2def36a9"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-1f233231 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+              data-id="1f233231"
+              data-element_type="widget"
+              data-widget_type="icon-list.default"
+            >
+              <div class="elementor-widget-container">
+                <ul class="elementor-icon-list-items">
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                  <li class="elementor-icon-list-item">
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-caret-right"
+                        viewBox="0 0 192 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-572556ed e-con-full e-flex e-con e-child"
+            data-id="572556ed"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-19edaaac elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+              data-id="19edaaac"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">
+                <p>Restaurant</p>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-1d2d74f elementor-widget elementor-widget-heading"
+              data-id="1d2d74f"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h5 class="elementor-heading-title elementor-size-default">
+                  Sunday — Wednesday<br />11:30am — 9:00pm
+                </h5>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-3a01d72f elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+              data-id="3a01d72f"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">Market</div>
+            </div>
+            <div
+              class="elementor-element elementor-element-5cfb8a5b elementor-widget elementor-widget-heading"
+              data-id="5cfb8a5b"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h5 class="elementor-heading-title elementor-size-default">
+                  Monday - Saturday<br />9:00pm — 7:00pm
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-18ea1afd e-con-full e-flex e-con e-child"
+            data-id="18ea1afd"
+            data-element_type="container"
+          ></div>
+          <div
+            class="elementor-element elementor-element-fe7402a e-con-full e-flex e-con e-child"
+            data-id="fe7402a"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-1c2d8961 elementor-widget elementor-widget-qi_addons_for_elementor_clients_slider"
+              data-id="1c2d8961"
+              data-element_type="widget"
+              data-widget_type="qi_addons_for_elementor_clients_slider.default"
+            >
+              <div class="elementor-widget-container">
+                <div
+                  class="qodef-shortcode qodef-m qodef-qi-clients-slider qodef-qi-grid qodef-qi-swiper-container"
+                  data-options='{"direction":"horizontal","slidesPerView":"1","spaceBetween":30,"spaceBetweenTablet":16,"spaceBetweenMobile":30,"effect":"","loop":true,"autoplay":true,"centeredSlides":false,"speed":"","speedAnimation":"","outsideNavigation":"no","outsidePagination":"no","unique":"3","partialValue":0,"disablePartialValue":"","parallax":"no","customStages":true,"slidesPerView1680":"1","slidesPerView1440":"1","slidesPerView1366":"1","slidesPerView1024":"3","slidesPerView768":"3","slidesPerView680":"3","slidesPerView480":"1"}'
+                >
+                  <div class="swiper-wrapper">
+                    <div class="qodef-e swiper-slide">
+                      <div class="qodef-e-inner">
+                        <div class="qodef-e-images-holder">
+                          <div class="qodef-e-main-image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="650"
+                              height="650"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-650x650.jpg"
+                              class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-650x650.jpg    650w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-150x150.jpg    150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-1300x1300.jpg 1300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-300x300.jpg    300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/jesse-ballantyne-_JOG2sjISWI-unsplash-100x100.jpg    100w
+                              "
+                              sizes="(max-width: 650px) 100vw, 650px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="qodef-e swiper-slide">
+                      <div class="qodef-e-inner">
+                        <div class="qodef-e-images-holder">
+                          <div class="qodef-e-main-image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="650"
+                              height="650"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-650x650.jpg"
+                              class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-650x650.jpg    650w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-150x150.jpg    150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-1300x1300.jpg 1300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-300x300.jpg    300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/glasses-and-plates-on-long-table-in-restaurant-for-2023-11-27-05-03-45-utc-1-100x100.jpg    100w
+                              "
+                              sizes="(max-width: 650px) 100vw, 650px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="qodef-e swiper-slide">
+                      <div class="qodef-e-inner">
+                        <div class="qodef-e-images-holder">
+                          <div class="qodef-e-main-image">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              width="650"
+                              height="650"
+                              src="https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-650x650.jpg"
+                              class="attachment-qi_addons_for_elementor_image_size_square size-qi_addons_for_elementor_image_size_square"
+                              alt=""
+                              srcset="
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-650x650.jpg    650w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-150x150.jpg    150w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-1300x1300.jpg 1300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-300x300.jpg    300w,
+                                https://arif.freelancerarif.com/wp-content/uploads/2025/05/close-up-of-waitress-holding-plate-of-chicken-sala-2023-11-27-05-31-58-utc-100x100.jpg    100w
+                              "
+                              sizes="(max-width: 650px) 100vw, 650px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-31e756de e-flex e-con-boxed e-con e-parent"
+        data-id="31e756de"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-6f0342d6 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+            data-id="6f0342d6"
+            data-element_type="widget"
+            data-widget_type="divider.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-divider">
+                <span class="elementor-divider-separator"> </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-22bdb27 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+            data-id="22bdb27"
+            data-element_type="widget"
+            data-widget_type="text-editor.default"
+          >
+            <div class="elementor-widget-container">
+              <p>Copyright 2025 || Developed by MIT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="speculationrules">
+      {
+        "prefetch": [
+          {
+            "source": "document",
+            "where": {
+              "and": [
+                { "href_matches": "\/*" },
+                {
+                  "not": {
+                    "href_matches": [
+                      "\/wp-*.php",
+                      "\/wp-admin\/*",
+                      "\/wp-content\/uploads\/*",
+                      "\/wp-content\/*",
+                      "\/wp-content\/plugins\/*",
+                      "\/wp-content\/themes\/hello-elementor\/*",
+                      "\/*\\?(.+)"
+                    ]
+                  }
+                },
+                { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } },
+                {
+                  "not": { "selector_matches": ".no-prefetch, .no-prefetch a" }
+                }
+              ]
+            },
+            "eagerness": "conservative"
+          }
+        ]
+      }
+    </script>
+    <script>
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(
+          `.e-con.e-parent:not(.e-lazyloaded)`
+        );
+        const lazyloadBackgroundObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                let lazyloadBackground = entry.target;
+                if (lazyloadBackground) {
+                  lazyloadBackground.classList.add("e-lazyloaded");
+                }
+                lazyloadBackgroundObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "200px 0px 200px 0px" }
+        );
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ["DOMContentLoaded", "elementor/lazyload/observe"];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <script>
+      (function () {
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, "woocommerce-js");
+        document.body.className = c;
+      })();
+    </script>
+    <link
+      rel="stylesheet"
+      id="wc-blocks-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.8.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="jeg-dynamic-style-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.3.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-icons-ekiticons-css"
+      href="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.5.2"
+      media="all"
+    />
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.29.1"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.29.1"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
+      id="jquery-ui-core-js"
+    ></script>
+    <script id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        environmentMode: {
+          edit: false,
+          wpPreview: false,
+          isScriptDebug: false,
+        },
+        i18n: {
+          shareOnFacebook: "Share on Facebook",
+          shareOnTwitter: "Share on Twitter",
+          pinIt: "Pin it",
+          download: "Download",
+          downloadImage: "Download image",
+          fullscreen: "Fullscreen",
+          zoom: "Zoom",
+          share: "Share",
+          playVideo: "Play Video",
+          previous: "Previous",
+          next: "Next",
+          close: "Close",
+          a11yCarouselPrevSlideMessage: "Previous slide",
+          a11yCarouselNextSlideMessage: "Next slide",
+          a11yCarouselFirstSlideMessage: "This is the first slide",
+          a11yCarouselLastSlideMessage: "This is the last slide",
+          a11yCarouselPaginationBulletMessage: "Go to slide",
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobile Portrait",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: true,
+            },
+            mobile_extra: {
+              label: "Mobile Landscape",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: false,
+            },
+            tablet: {
+              label: "Tablet Portrait",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: true,
+            },
+            tablet_extra: {
+              label: "Tablet Landscape",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: false,
+            },
+            laptop: {
+              label: "Laptop",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: false,
+            },
+            widescreen: {
+              label: "Widescreen",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: false,
+            },
+          },
+          hasCustomBreakpoints: false,
+        },
+        version: "3.29.1",
+        is_static: false,
+        experimentalFeatures: {
+          e_font_icon_svg: true,
+          additional_custom_breakpoints: true,
+          container: true,
+          e_local_google_fonts: true,
+          theme_builder_v2: true,
+          "hello-theme-header-footer": true,
+          "nested-elements": true,
+          editor_v2: true,
+          e_element_cache: true,
+          home_screen: true,
+          "launchpad-checklist": true,
+          "cloud-library": true,
+          e_opt_in_v4_page: true,
+          "page-transitions": true,
+          notes: true,
+          "form-submissions": true,
+          e_scroll_snap: true,
+        },
+        urls: {
+          assets:
+            "https:\/\/arif.freelancerarif.com\/wp-content\/plugins\/elementor\/assets\/",
+          ajaxurl:
+            "https:\/\/arif.freelancerarif.com\/wp-admin\/admin-ajax.php",
+          uploadUrl: "https:\/\/arif.freelancerarif.com\/wp-content\/uploads",
+        },
+        nonces: { floatingButtonsClickTracking: "fb9224161c" },
+        swiperClass: "swiper",
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+          woocommerce_notices_elements: [],
+          hello_header_logo_type: "logo",
+          hello_header_menu_layout: "horizontal",
+          hello_footer_logo_type: "logo",
+        },
+        post: {
+          id: 209,
+          title: "My%20Blog%20%E2%80%93%20My%20WordPress%20Blog",
+          excerpt: "",
+          featuredImage: false,
+        },
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.29.1"
+      id="elementor-frontend-js"
+    ></script>
+    <script id="elementor-frontend-js-after">
+      var jkit_ajax_url =
+          "https://arif.freelancerarif.com/?jkit-ajax-request=jkit_elements",
+        jkit_nonce = "2a1fba0805";
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=2.3.2"
+      id="hfe-frontend-js-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/plugins/swiper/8.4.5/swiper.min.js?ver=8.4.5"
+      id="swiper-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
+      id="imagesloaded-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/plugins/fslightbox/fslightbox.min.js?ver=6.8.1"
+      id="fslightbox-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/isotope.pkgd.min.js?ver=3.0.6"
+      id="isotope-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/packery-mode.pkgd.min.js?ver=2.0.1"
+      id="packery-js"
+    ></script>
+    <script id="qi-addons-for-elementor-script-js-extra">
+      var qodefQiAddonsGlobal = {
+        vars: {
+          adminBarHeight: 0,
+          iconArrowLeft:
+            '<svg  xmlns="http:\/\/www.w3.org\/2000\/svg" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0.5" y1="16" x2="33.5" y2="16"\/><line x1="0.3" y1="16.5" x2="16.2" y2="0.7"\/><line x1="0" y1="15.4" x2="16.2" y2="31.6"\/><\/svg>',
+          iconArrowRight:
+            '<svg  xmlns="http:\/\/www.w3.org\/2000\/svg" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0" y1="16" x2="33" y2="16"\/><line x1="17.3" y1="0.7" x2="33.2" y2="16.5"\/><line x1="17.3" y1="31.6" x2="33.5" y2="15.4"\/><\/svg>',
+          iconClose:
+            '<svg  xmlns="http:\/\/www.w3.org\/2000\/svg" x="0px" y="0px" viewBox="0 0 9.1 9.1" xml:space="preserve"><g><path d="M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z"\/><\/g><\/svg>',
+        },
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=1.9.0"
+      id="qi-addons-for-elementor-script-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.9"
+      id="cute-alert-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.3.0"
+      id="hello-theme-frontend-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.5.2"
+      id="elementskit-framework-js-frontend-js"
+    ></script>
+    <script id="elementskit-framework-js-frontend-js-after">
+      var elementskit = {
+        resturl: "https://arif.freelancerarif.com/wp-json/elementskit/v1/",
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.5.2"
+      id="ekit-widget-scripts-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.8.5"
+      id="sourcebuster-js-js"
+    ></script>
+    <script id="wc-order-attribution-js-extra">
+      var wc_order_attribution = {
+        params: {
+          lifetime: 1.0e-5,
+          session: 30,
+          base64: false,
+          ajaxurl:
+            "https:\/\/arif.freelancerarif.com\/wp-admin\/admin-ajax.php",
+          prefix: "wc_order_attribution_",
+          allowTracking: true,
+        },
+        fields: {
+          source_type: "current.typ",
+          referrer: "current_add.rf",
+          utm_campaign: "current.cmp",
+          utm_source: "current.src",
+          utm_medium: "current.mdm",
+          utm_content: "current.cnt",
+          utm_id: "current.id",
+          utm_term: "current.trm",
+          utm_source_platform: "current.plt",
+          utm_creative_format: "current.fmt",
+          utm_marketing_tactic: "current.tct",
+          session_entry: "current_add.ep",
+          session_start_time: "current_add.fd",
+          session_pages: "session.pgs",
+          session_count: "udata.vst",
+          user_agent: "udata.uag",
+        },
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.8.5"
+      id="wc-order-attribution-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.13"
+      id="jkit-sticky-element-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+      id="wp-i18n-js"
+    ></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/qi-addons-for-elementor/inc/plugins/elementor/assets/js/elementor.js?ver=6.8.1"
+      id="qi-addons-for-elementor-elementor-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.19.2"
+      id="elementor-pro-webpack-runtime-js"
+    ></script>
+    <script id="elementor-pro-frontend-js-before">
+      var ElementorProFrontendConfig = {
+        ajaxurl: "https:\/\/arif.freelancerarif.com\/wp-admin\/admin-ajax.php",
+        nonce: "2002e13ddb",
+        urls: {
+          assets:
+            "https:\/\/arif.freelancerarif.com\/wp-content\/plugins\/elementor-pro\/assets\/",
+          rest: "https:\/\/arif.freelancerarif.com\/wp-json\/",
+        },
+        shareButtonsNetworks: {
+          facebook: { title: "Facebook", has_counter: true },
+          twitter: { title: "Twitter" },
+          linkedin: { title: "LinkedIn", has_counter: true },
+          pinterest: { title: "Pinterest", has_counter: true },
+          reddit: { title: "Reddit", has_counter: true },
+          vk: { title: "VK", has_counter: true },
+          odnoklassniki: { title: "OK", has_counter: true },
+          tumblr: { title: "Tumblr" },
+          digg: { title: "Digg" },
+          skype: { title: "Skype" },
+          stumbleupon: { title: "StumbleUpon", has_counter: true },
+          mix: { title: "Mix" },
+          telegram: { title: "Telegram" },
+          pocket: { title: "Pocket", has_counter: true },
+          xing: { title: "XING", has_counter: true },
+          whatsapp: { title: "WhatsApp" },
+          email: { title: "Email" },
+          print: { title: "Print" },
+        },
+        woocommerce: {
+          menu_cart: {
+            cart_page_url: "https:\/\/arif.freelancerarif.com\/3-png\/",
+            checkout_page_url: "https:\/\/arif.freelancerarif.com\/4-png\/",
+            fragments_nonce: "4452a6dbbc",
+          },
+        },
+        facebook_sdk: { lang: "en_US", app_id: "" },
+        lottie: {
+          defaultAnimationUrl:
+            "https:\/\/arif.freelancerarif.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
+        },
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.19.2"
+      id="elementor-pro-frontend-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.19.2"
+      id="pro-preloaded-elements-handlers-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.5.2"
+      id="animate-circle-js"
+    ></script>
+    <script id="elementskit-elementor-js-extra">
+      var ekit_config = {
+        ajaxurl: "https:\/\/arif.freelancerarif.com\/wp-admin\/admin-ajax.php",
+        nonce: "d9219815de",
+      };
+    </script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.5.2"
+      id="elementskit-elementor-js"
+    ></script>
+    <script
+      src="https://arif.freelancerarif.com/wp-content/plugins/selection-lite/js/sticky-effect.min.js?ver=1.15"
+      id="mdp-selection-sticky-effect-js"
+    ></script>
+  </body>
+</html>
